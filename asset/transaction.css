@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', 'Arial';
+}
+
+.container {
+    background-color: rgb(0, 186, 253);
+    margin: auto;
+    margin-top: 50px;
+    width: 300px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.tittle {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: darkred;
+}
+
+.profile-pix {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 3px solid white;
+    overflow: hidden;
+    position: absolute;
+    top: 27px;
+    left: 75px;
+    transform: rotate(15deg);
+}
+
+.profile-pix img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 50%;
+
+}
+
+.display-transaction-box {
+    text-align: center;
+}
+
+.display-deposit-withdraw-box {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.display-balance-box {
+    border: 2px solid navy;
+    border-radius: 5px;
+    background: linear-gradient(transparent, rgb(0, 191, 255));
+    color: navy;
+    margin-bottom: 10px;
+    height: 75px;
+}
+
+.display-balance-box .p1 {
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: navy;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-balance-box .p1 img {
+    width: 23px;
+    margin-right: 5px;
+}
+
+.display-balance-box .show-hide-balance {
+    font-size: 30px;
+    font-weight: 600;
+    color: navy;
+    display: none;
+}
+
+.hide-amount {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.display-deposit-box,
+.display-withdraw-box {
+    background: linear-gradient(rgb(97, 231, 255), rgb(53, 181, 255));
+    border-radius: 5px;
+    color: darkred;
+    padding: 2px 20px;
+}
+
+.display-deposit-box .p2,
+.display-withdraw-box .p2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.transaction-box {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(236, 236, 236);
+    border-bottom: 1px solid rgb(236, 236, 236);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.deposit-containter p,
+.withdraw-containter p {
+    font-weight: 500;
+}
+
+.deposit-containter input,
+.withdraw-containter input {
+    outline-color: rgb(0, 118, 209);
+    margin-bottom: 8px;
+    border: 1px solid rgb(206, 212, 218);
+    padding: 4px 5px;
+    width: 90%;
+    font-size: 16px;
+}
+
+.deposit-containter input:focus,
+.withdraw-containter input:focus {
+    box-shadow: 0px 3px 10px rgba(0, 144, 241, .8);
+}
+
+.deposit-containter button,
+.withdraw-containter button {
+    background-color: rgb(160, 0, 0);
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.deposit-containter button:hover,
+.withdraw-containter button:hover {
+    background-color: rgb(183, 0, 0);
+    cursor: pointer;
+}
+
+.deposit-containter,
+.withdraw-containter {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2px;
+}
+
+.round-shape {
+    display: flex;
+    justify-content: space-between;
+}
+
+.round-shape img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}

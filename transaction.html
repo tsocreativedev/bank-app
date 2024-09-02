@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Page</title>
+    <link rel="stylesheet" href="asset/transaction.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="tittle">Tso Bank</h1>
+        <div class="profile-pix">
+            <img alt="" src="asset/img/profile.png">
+        </div>
+        <div class="display-transaction-box">
+            <div class="display-balance-box">
+                <p class="p1 js-show-balance"> <img src="asset/img/show-regular-24.png" alt="">Show Balance</p>
+                <p class="show-hide-balance js-show-hide-balance">$<span class="p2 js-balance">2500</span></p>
+                <p class="hide-amount js-hide-amount">..............</p>
+            </div>
+            <div class="display-deposit-withdraw-box">
+                <div class="display-deposit-box">
+                    <p class="p1">Deposit</p>
+                    <p>$<span class="p2 js-deposit-output">0</span></p>
+                </div>
+                <div class="display-withdraw-box">
+                    <p class="p1">Withdraw</p>
+                    <p>$<span class="p2 js-withdraw-output">0</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="transaction-box">
+            <div class="deposit-containter">
+                <p>Deposit</p>
+                <input class="js-deposit-input" type="number" placeholder="Deposit">
+                <button class="js-deposit-btn">Deposit</button>
+            </div>
+
+            <div class="withdraw-containter">
+                <p>Withdraw</p>
+                <input class="js-withdraw-input" type="number" placeholder="Withdraw">
+                <button class="js-withdraw-btn">Withdraw</button>
+            </div>
+        </div>
+
+        <div class="round-shape">
+            <img alt="" src="asset/img/master.png">
+            <img alt="" src="asset/img/visa.png">
+            <img alt="" src="asset/img/master.png">
+        </div>
+    </div>
+
+    <script src="asset/transaction.js"></script>
+</body>
+
+</html>
